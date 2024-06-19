@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form trong HTML</h1>
+    <form action="https://www.google.com.vn/" method="POST">
+      <div>
+        <label for="fullname">Fullname:</label><br />
+        <input
+          type="text"
+          placeholder="Enter Full name"
+          id="fullname"
+          name="fullname"
+        />
+      </div>
+      <div>
+        <label for="skin">Skin:</label><br />
+        <input type="color" id="skin" name="color" />
+      </div>
+
+      <div>
+        <label for="dob">HPBD:</label><br />
+        <input type="datetime" id="dob" name="dob" />
+      </div>
+
+      <div>
+        <label for="number">Number:</label><br />
+        <input
+          type="number"
+          placeholder="Enter Number"
+          id="number"
+          name="number"
+        />
+      </div>
+      <!-- <div>
+        <label for="dob">HPBD:</label><br />
+        <input type="datetime-local" id="dob" name="dob" />
+      </div> -->
+
+      <div>
+        <label for="email">Email:</label><br />
+        <input type="email" placeholder="Enter Email" id="email" name="email" />
+      </div>
+
+      <div>
+        <label for="phone">SĐT:</label><br />
+        <input type="tel" placeholder="phone" id="phone" name="phone" />
+      </div>
+
+      <div>
+        <p>Gender:</p>
+        <label for="gender">Male:</label>
+        <input type="radio" id="gender" name="gender" />
+
+        <label for="gender">Female:</label>
+        <input type="radio" id="gender" name="gender" />
+
+        <label for="gender">Other:</label>
+        <input type="radio" id="gender" name="gender" />
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </div>
+
+      <div>
+        <p>My Hobbbies:</p>
+        <label for="hobbies1">Hobbbies1</label>
+        <input type="checkbox" id="hobbies1" name="hobbies1" value="MU" />
+
+        <label for="hobbies2">Hobbbies2:</label>
+        <input
+          type="checkbox"
+          id="hobbies2"
+          name="hobbies2"
+          value="Lập trình"
+        />
+
+        <label for="hobbies3">Xem phim</label>
+        <input type="checkbox" id="hobbies3" name="hobbies3" value="Xem phim" />
+      </div>
+      <br />
+      <button>Register</button><br />
+
+      <input type="button" value="Cancel" /><br />
+      <input type="reset" value="Reset" />
+
+      <div>
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="password"
+          name="password"
+        /><br /><br />
+
+        <div>
+          <label for="feelback">Feelback</label><br />
+          <textarea name="feelback" id="feelback"></textarea>
+        </div>
+
+        <div>
+          <label for="city">Tỉnh/Thành Phố</label><br />
+          <select name="city" id="city">
+            <option value="">Hà Nội</option>
+            <option value="">TP Hồ Chí Minh</option>
+            <option value="">Đà Nẵng</option>
+          </select>
+        </div>
+
+        <button>Register</button>
+      </div>
+    </form>
+  </body>
+</html>
